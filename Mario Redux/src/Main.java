@@ -24,7 +24,7 @@ import static org.lwjgl.opengl.GL11.*;
  * https://github.com/RealGamertime/Mario-Game/blob/master/Mario%20Redux/src/Main.java
  * https://github.com/account/organizations/newv
  * https://wiki.eclipse.org/Karaf_Remote_Management_with_Eclipse
- * test
+ * WATCH THIS YOUTUBE PLAYLISTG FIRST - https://www.youtube.com/watch?v=z0S5Ded2IJY&list=PL513808FE7D9A5D68
  */
 public class Main {
 	

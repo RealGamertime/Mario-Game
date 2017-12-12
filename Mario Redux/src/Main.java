@@ -42,7 +42,7 @@ public class Main {
 	public static Texture loadTexture(String key)
 	{
 		try {
-			return TextureLoader.getTexture("png", new FileInputStream(new File("res/" + key + ".png")));
+			return TextureLoader.getTexture("png", new FileInputStream(new File("Mario Redux/res/" + key + ".png")));
 		}
 		catch (IOException e)
 		{

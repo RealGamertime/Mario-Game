@@ -105,11 +105,11 @@ public class Main {
 	{
 		try
 		{
-			Display.setDisplayMode(new DisplayMode(1360, 760));
-			Display.setFullscreen(true);
-			//Display.setInitialBackground(0, 0, 255);
+			Display.setDisplayMode(new DisplayMode(1360, 720));
 			Display.setTitle(GAME_NAME);
 			Display.create();
+			Display.setResizable(true);
+			Display.setVSyncEnabled(true);
 		}
 		catch(LWJGLException ex)
 		{

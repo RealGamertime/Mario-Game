@@ -1,4 +1,5 @@
-import java.util.logging.Level;
+import
+java.util.logging.Level;
 import java.util.logging.Logger;
 import java.io.File;
 import java.io.FileInputStream;
@@ -24,7 +25,7 @@ import static org.lwjgl.opengl.GL11.*;
  * https://github.com/RealGamertime/Mario-Game/blob/master/Mario%20Redux/src/Main.java
  * https://github.com/account/organizations/newv
  * https://wiki.eclipse.org/Karaf_Remote_Management_with_Eclipse
- * test
+ * test cbcdbh
  */
 public class Main {
 	
@@ -42,7 +43,7 @@ public class Main {
 	public static Texture loadTexture(String key)
 	{
 		try {
-			return TextureLoader.getTexture("png", new FileInputStream(new File("Mario Redux/res/" + key + ".png")));
+			return TextureLoader.getTexture("png", new FileInputStream(new File("res/" + key + ".png")));
 		}
 		catch (IOException e)
 		{

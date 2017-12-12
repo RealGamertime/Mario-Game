@@ -11,7 +11,6 @@ import org.newdawn.slick.opengl.Texture;
 import org.newdawn.slick.opengl.TextureLoader;
 import static org.lwjgl.opengl.GL11.*;
 
- 
 /**
  *TODO
  * Abstract Block
@@ -23,7 +22,8 @@ import static org.lwjgl.opengl.GL11.*;
  * Physics
  * Player
  * https://github.com/RealGamertime/Mario-Game/blob/master/Mario%20Redux/src/Main.java
- * https://github.com/account/organizations/new
+ * https://github.com/account/organizations/newv
+ * https://wiki.eclipse.org/Karaf_Remote_Management_with_Eclipse
  */
 public class Main {
 	

@@ -14,6 +14,7 @@ import static org.lwjgl.opengl.GL11.*;
  * https://wiki.eclipse.org/Karaf_Remote_Management_with_Eclipse
  * WATCH THIS YOUTUBE PLAYLISTG FIRST - https://www.youtube.com/watch?v=z0S5Ded2IJY&list=PL513808FE7D9A5D68
  * THEN WATCH THIS SERIES - https://www.youtube.com/watch?v=0v56I5UWrYY&index=1&list=PL19F2453814E0E315
+ *
  */
 public class Main {
 	public static boolean fullScreen = false;

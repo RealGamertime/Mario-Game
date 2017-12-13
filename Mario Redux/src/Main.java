@@ -10,14 +10,6 @@ import static org.lwjgl.opengl.GL11.*;
 
 /**
  *TODO
- * Abstract Block
- * Brick extends Block
- * QuestionMark extends Block
- * Abstract Enemy
- * Goomba extends Enemy
- * Item
- * Physics
- * Player
  * https://github.com/RealGamertime/Mario-Game/blob/master/Mario%20Redux/src/Main.java
  * https://github.com/account/organizations/newv
  * https://wiki.eclipse.org/Karaf_Remote_Management_with_Eclipse

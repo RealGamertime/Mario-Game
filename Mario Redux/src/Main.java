@@ -30,31 +30,16 @@ public class Main {
 	
 	private static void gameLoop()
 	{
-		Texture text = Graphics.loadTexture("Mario_brick");
+		/*Texture text = Graphics.loadTexture("Mario_brick");
+		text.bind();*/
 		
 		//Game Loop
 		while(!Display.isCloseRequested())
 		{
 			glClear(GL_COLOR_BUFFER_BIT);
-			
-			//glColor3f(1f, 1f, 0f);
-			
-			//glTranslate();
-			text.bind();
-			glBegin(GL_QUADS);
-			{
-				glTexCoord2f(0, 0);
-				glVertex2f(0, 0);
-				glTexCoord2f(0, 1);
-				glVertex2f(0, 64);
-				glTexCoord2f(1, 1);
-				glVertex2f(64, 64);
-				glTexCoord2f(1, 0);
-				glVertex2f(64, 0);
-				//glTexCoord2f(64, 0);
-			}
-			glEnd();
-			
+			glLoadIdentity();
+			drawRect(56, 56, 200, 20);
+			drawRect(56, 56, 200, 50, 90);
 			Display.update();
 		}
 	}
@@ -91,5 +76,27 @@ public class Main {
 		{
 			Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
 		}
+	}
+	private static void drawRect(float x, float y, float width, float height)
+	{
+		drawRect(x,y,width,height, 0);
+	}
+	private static void drawRect(float x, float y, float width, float height, float rot)
+	{
+		glPushMatrix();
+		{
+			glTranslatef(x,y,0);
+			glRotatef(rot,0,0,1);
+			
+			glBegin(GL_QUADS);
+			{
+				glVertex2f(0, 0);
+				glVertex2f(0, height);
+				glVertex2f(width, height);
+				glVertex2f(width, 0);
+			}
+			glEnd();
+		}
+		glPopMatrix();
 	}
 }

@@ -9,7 +9,6 @@ import org.newdawn.slick.opengl.Texture;
 import static org.lwjgl.opengl.GL11.*;
 
 /**
- *TODO
  * https://github.com/RealGamertime/Mario-Game/blob/master/Mario%20Redux/src/Main.java
  * https://github.com/account/organizations/newv
  * https://wiki.eclipse.org/Karaf_Remote_Management_with_Eclipse

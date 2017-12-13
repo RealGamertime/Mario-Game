@@ -5,7 +5,6 @@ import java.lang.String;
 import org.lwjgl.LWJGLException;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
-import org.newdawn.slick.opengl.Texture;
 import static org.lwjgl.opengl.GL11.*;
 
 /**
@@ -15,7 +14,7 @@ import static org.lwjgl.opengl.GL11.*;
  * WATCH THIS YOUTUBE PLAYLISTG FIRST - https://www.youtube.com/watch?v=z0S5Ded2IJY&list=PL513808FE7D9A5D68
  */
 public class Main {
-	
+	public static boolean fullScreen = false;
 	public static String GAME_NAME = "Mario Redux";
 	
 	public static void main(String[] args)
@@ -63,11 +62,18 @@ public class Main {
 	{
 		try
 		{
+			if(!fullScreen)
+			{
 			Display.setDisplayMode(new DisplayMode(1360, 720));
-			Display.setTitle(GAME_NAME);
-			Display.create();
 			Display.setResizable(true);
+			}
+			else
+			{
+				Display.setFullscreen(true);
+			}
+			Display.setTitle(GAME_NAME);
 			Display.setVSyncEnabled(true);
+			Display.create();
 		}
 		catch(LWJGLException ex)
 		{

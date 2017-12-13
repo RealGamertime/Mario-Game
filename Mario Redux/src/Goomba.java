@@ -1,4 +1,4 @@
-
-public class Goomba extends Enemy {
-
+public class Goomba extends Enemy 
+{
+	
 }

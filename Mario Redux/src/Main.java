@@ -1,15 +1,11 @@
 import
 java.util.logging.Level;
 import java.util.logging.Logger;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.lang.String;
 import org.lwjgl.LWJGLException;
 import org.lwjgl.opengl.Display;
 import org.lwjgl.opengl.DisplayMode;
 import org.newdawn.slick.opengl.Texture;
-import org.newdawn.slick.opengl.TextureLoader;
 import static org.lwjgl.opengl.GL11.*;
 
 /**
@@ -40,21 +36,10 @@ public class Main {
 		
 		
 	}
-	public static Texture loadTexture(String key)
-	{
-		try {
-			return TextureLoader.getTexture("png", new FileInputStream(new File("res/" + key + ".png")));
-		}
-		catch (IOException e)
-		{
-			e.printStackTrace();
-		}
-		return null;
-	}
 	
 	private static void gameLoop()
 	{
-		Texture text = loadTexture("Mario_brick");
+		Texture text = Graphics.loadTexture("Mario_brick");
 		
 		//Game Loop
 		while(!Display.isCloseRequested())

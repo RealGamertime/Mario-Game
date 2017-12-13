@@ -54,7 +54,7 @@ public class Main {
 	
 	private static void gameLoop()
 	{
-		Texture wood = loadTexture("Mario_brick");
+		Texture text = loadTexture("Mario_brick");
 		
 		//Game Loop
 		while(!Display.isCloseRequested())
@@ -64,7 +64,7 @@ public class Main {
 			//glColor3f(1f, 1f, 0f);
 			
 			//glTranslate();
-			wood.bind();
+			text.bind();
 			glBegin(GL_QUADS);
 			{
 				glTexCoord2f(0, 0);
